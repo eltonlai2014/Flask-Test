@@ -1,5 +1,5 @@
 from sqlalchemy import create_engine
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.ext.declarative import declarative_base 
 from sqlalchemy import Column
 from sqlalchemy import Integer, String, DATETIME, TEXT
 from sqlalchemy.orm import sessionmaker
