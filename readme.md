@@ -9,7 +9,7 @@ python.exe -m pip install --upgrade pip
 # Pack python
 ```
 pip install pyinstaller
-pyinstaller -F -c app.py -p db/__init__.py --hidden-import db --hidden-import sqlalchemy.sql.default_comparator --hidden-import sqlalchemy.ext.declarative --version-file=file_version_info.txt 
+pyinstaller -F -c app.py -p ./db --hidden-import db --hidden-import sqlalchemy.sql.default_comparator --hidden-import sqlalchemy.ext.declarative --version-file=file_version_info.txt 
 pyinstaller app.spec
 
     a.datas,
