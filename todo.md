@@ -6,3 +6,5 @@ os.environ.get()
 
 # 檔案路徑確認
 # 打包
+# MQ 使用127.0.0.1
+# NTP Service

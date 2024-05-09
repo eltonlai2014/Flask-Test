@@ -1,7 +1,10 @@
 from flask import Flask,request,Response,jsonify
+from gevent.pywsgi import WSGIServer
 
+from db.main import Test
 from db.query import test
 import os
+
 app = Flask(__name__)
 app.secret_key = "123456"
 
@@ -23,5 +26,8 @@ def hello_name(name):
     return "hello %s" %name
 
 if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=5000, debug=True)
-    print(os.environ.keys())
+    # Debug/Development
+    app.run(debug=True, host="0.0.0.0", port="5000")
+    # Production
+    # http_server = WSGIServer(('', 5000), app)
+    # http_server.serve_forever()
