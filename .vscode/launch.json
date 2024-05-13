@@ -10,6 +10,13 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal"
+        },
+        {
+            "name": "App Test",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceRoot}\\app.py",
+            "console": "integratedTerminal"
         }
     ]
 }

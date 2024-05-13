@@ -2,6 +2,9 @@ from db.main import create_session
 from db.main import Test
 from pprint import pprint
 
+def aaa():
+    return 'aaa'
+
 def test():
     session = create_session()
     print("-"*130)
