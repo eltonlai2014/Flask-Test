@@ -1,14 +1,15 @@
 import os
 from db.query import aaa
-from test import entity
+from test.entity import Person
+from datetime import datetime
 
 def ggg():
     print('db.query.aaa=', aaa())
 
     print('os.getcwd()=',os.getcwd())
 
-    a = entity.Person("a", 12)
-    b = entity.Person("b", 22)
+    a = Person("a", 12)
+    b = Person("b", 22)
  
     aMap = {"1":a, "2":b}
 
@@ -17,7 +18,7 @@ def ggg():
 
 
     
-    from datetime import datetime
+
     now = datetime.now() # current date and time
     print(now, now.timestamp(), str(int(now.timestamp())))
 

@@ -6,6 +6,6 @@ if getattr(sys, 'frozen', False):
 	print('frozen')
 elif __file__:
 	absPath = os.path.dirname(os.path.abspath(__file__))
-	print('__file__')
+	print('db __file__')
 
 print('db->', absPath)
